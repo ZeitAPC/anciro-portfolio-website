@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="../css/coffee-theme.css">
+    <style>
+        .card-container{
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+        }
+        .linkCard{
+            display: flex;
+            margin: 0 100px;
+            background: var(--coffeeDarkBrown);
+            height: 600px;
+            width: 400px;
+            align-items: center;
+            flex-direction: column;
+            border-radius:4%;
+            color: var(--coffeeLightBrown);
+            text-align: center;
+        }
+        .linkCardIcon{
+            width: 80%;
+            margin: 30px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="nav">
+    <img src="../image/coffee-beans.png" alt="" class="nav-icon">
+        <a href="index.html" class="links">
+            <span class="navlinks">Homepage</span>
+        </a>
+        <a href="myProjects.html" class="links">
+            <span class="navlinks">My Projects</span>
+        </a>
+        <a href="#" class="links" id="active">
+            <span class="navlinks">Contact me</span>
+        </a>
+    </nav>
+
+    <main>
+        <section class="card-container">
+                <a href="https://www.linkedin.com/in/francis-emmanuel-anciro-949073329/" class="linkCard" target="_blank">
+                    <img src="../image/linkedin.png" alt="" class="linkCardIcon" id="linkedInIcon">
+                    <p class="linkCardText" id="linkedinText">Check my profile! <br> Name: Francis Emmanuel Anciro</p>
+                </a>
+                <a href="#" class="linkCard">
+                    <img src="../image/outlook.png" alt="" class="linkCardIcon" id="outlookIcon">
+                    <p class="linkCardText" id="outlookText">Send me an Email! <br>Email: fdanciro@student.apc.edu.ph</p>
+                </a>
+        </section>
+    </main>
+
+</body>
+</html>

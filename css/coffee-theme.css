@@ -1,0 +1,41 @@
+:root{
+    --coffeeDarkBrown:#3B2F2F;
+    --coffeeLightBrown:#ffe9c0;
+    --coffeeBrown:#6F4E37;
+    --dark-theme-secondary-color:#4B3832;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--coffeeLightBrown);
+    color: var(--coffeeDarkBrown);
+    font-size: 20px;
+}
+body a{
+        text-decoration: none;
+}
+nav{
+    display: flex;
+    background: var(--coffeeDarkBrown);
+    height: 60px;
+    align-items: center;
+    padding: 0 0 0 20px;
+}
+.nav-icon{
+    height: 100%
+}
+.links{
+    color: var(--coffeeLightBrown);
+    text-decoration: none;
+    margin: 10px 25px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+nav a:hover, #active{
+    background: var(--coffeeBrown);
+}

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Anciro Portfolio Website</title>
+    <link rel="shortcut icon" href="../image/coffee.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/coffee-theme.css">
+    <style>
+        body{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-areas:
+            "nav "
+            "header "
+            "imageOfMe "
+            "heroCard "
+            "funFactsAboutMe "
+            "footer ";
+            }
+
+        main, footer{
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .currentInterest{
+            padding-left: 1.25rem;
+            margin: 1rem 0;
+            list-style: disc;
+            box-sizing: content-box;
+        }
+        summary{
+            background: var(--dark-theme-secondary-color);
+            padding: 10px 10px;
+            display: inline-block;
+            border-radius: 4px;
+        }
+        summary:hover{
+            background: var(--coffeeBrown);
+        }
+
+        a{
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav" style="grid-area: nav">
+    <img src="../image/coffee-beans.png" alt="" class="nav-icon">
+        <a href="#" class="links" id="active">
+            <span class="navlinks">Homepage</span>
+        </a>
+        <a href="myProjects.html" class="links">
+            <span class="navlinks">My Projects</span>
+        </a>
+        <a href="ContactUs.html" class="links">
+            <span class="navlinks">Contact me</span>
+        </a>
+    </nav>
+
+    <header class="header" style="grid-area: header">
+        <h1 style="text-align: center">Hello, I'm Francis!</h1>
+    </header>
+
+    <main>
+            <figure class="imageOfMe" style="grid-area: imageOfMe">
+                <img src="../image/Me.JPG" height =250px alt="A placeholder">
+                <figcaption>A picture of me</figcaption>
+            </figure>
+        <section class="heroCard">
+            <article>
+                <h3>Hello!</h3>
+                <p style="margin: 10px 0; text-indent: 50px">I'm <strong>Francis Emmanuel D. Anciro</strong>. A 2nd year college student taking <strong>Bachelor of Science in Computer Science majoring in Cybersecurity and Forensics</strong></p>
+            </article>
+
+            <aside>
+                <h4>My current interests</h4>
+                <ul class="currentInterest">
+                    <li>Learning offensive security basics</li>
+                    <li>Planning to develop a password managing app for my own</li>
+                    <li>Coffee</li>
+                </ul>
+            </aside>
+        </section>
+
+
+
+        <br>
+        <details class="funFactsAboutMe" style="grid-area: funFactsAboutMe">
+            <summary id="dropdown" style="color: var(--coffeeLightBrown)">Some fun facts about me</summary>
+            <ul>
+                <li>I'm 19 years old</li>
+                <li>My favorite color is orange</li>
+                <li>My hobbies are sleeping, playing mobile games, and cooking</li>
+            </ul>
+        </details>
+    </main>
+
+    <footer class="footer" style="grid-area: footer">
+        <p>Tags: #Portfolio #Computer Science | Author: Francis Anciro | Last Updated: 2025-11-19 | <time>10:34 PM</time></p>
+    </footer>
+</body>
+</html>
+
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/coffee-theme.css">
+    <style>
+        main{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .heading{
+            margin: 20px 0;
+        }
+
+        table{
+            width: 50%;
+        }
+        th, tr, td{
+            border:1px solid var(--coffeeDarkBrown);
+            text-align: center;
+            padding: 0 20px;
+        }
+        th{
+            background: var(--coffeeDarkBrown);
+            color: var(--coffeeLightBrown);
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+    <img src="../image/coffee-beans.png" alt="" class="nav-icon">
+        <a href="index.html" class="links">
+            <span class="navlinks">Homepage</span>
+        </a>
+        <a href="#" class="links" id="active">
+            <span class="navlinks">My Projects</span>
+        </a>
+        <a href="ContactUs.html" class="links">
+            <span class="navlinks">Contact me</span>
+        </a>
+    </nav>
+    <main>
+            <h1 class="heading">My previous projects</h1>
+        <table class="myPreviousProjects">
+            <tr>
+                <th>Project Name</th>
+                <th>Description</th>
+                <th>Year finished</th>
+            </tr>
+            <tr>
+                <td>Lace it</td>
+                <td>An e-commerce website about a shoe company. In fulfillment of a finals requirement for TLE</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>AlAn Script</td>
+                <td>A portfolio website for me and my partner containing our resume, a video explanation about a topic, and where to contact us</td>
+                <td>2023</td>
+            </tr>
+            <tr>
+                <td>Weather app</td>
+                <td>A CLI program made in <mark>python</mark> that checks for the weather of a location. Uses the OpenWeatherMap API</td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <td>Indirect Clothing Inc</td>
+                <td>A CLI program made in <mark>java</mark> that allows users to order clothes and submit a support ticket</td>
+                <td>2025</td>
+            </tr>
+            <tr>
+                <td>Barangay Task Manager</td>
+                <td>A CLI program made in <mark>python</mark> that allows for users to suggest, vote, and view current list of tasks.</td>
+                <td>2025</td>
+            </tr>
+            <tr>
+                <td>ARE YOU HUMAN?: AI ETHICS</td>
+                <td>A discord bot made in <mark>python</mark> to create new channel for each user joining. The game is about choosing which response to the given question is the Human response</td>
+                <td>2025</td>
+            </tr>
+            <tr>
+                <td>Eco-Path Finder</td>
+                <td>A CLI program made in <mark>python</mark> that implements <a href="#">Dijkstra's Algorithm</a> and adding road types, number of stoplights,
+                and congestion to the factors considered when calculating each path.</td>
+                <td>2025</td>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>
