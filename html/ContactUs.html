@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <title>Contact Me</title>
     <link rel="stylesheet" href="../css/coffee-theme.css">
+    <link rel="shortcut icon" href="../image/coffee.png" type="image/x-icon">
+
     <style>
+        main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
         .card-container{
             display: flex;
             justify-content: center;
@@ -22,9 +29,67 @@
             color: var(--coffeeLightBrown);
             text-align: center;
         }
-        .linkCardIcon{
+        .linkCard:hover{
+            border: 3px var(--coffeeAutumn) solid;
+            opacity: .8;
+        }
+        /* Ends with */
+        .card-container img[src$=".png"]{
             width: 80%;
             margin: 30px 0;
+        }
+        .newsLetterFormContainer{
+            display: flex;
+            flex-direction: column;
+            background-color: var(--coffeeDarkBrown);
+            color: var(--coffeeLightBrown);
+            height: 600px;
+            width: 400px;
+            margin: 100px 100px 0 100px;
+            justify-content: center;
+            align-items: center;
+            border-radius:4%;
+        }
+        /* Has Attr */
+        input[id]{
+            border: 2px var(--coffeeBrown) solid;
+            background-color: white;
+            height: 40px;
+            width: 250px;
+            padding: 0 0 0 5px;
+        }
+        input[id]::placeholder{
+            color: var(--coffeeAutumn);
+            font-size: 16px;
+            opacity: .5;
+        }
+        input:focus{
+            border-color: var(--coffeeAutumn);
+            outline: none;
+        }
+        /* Exact value */
+        input[type="text"]{
+            margin: 10px 0;
+            font-size: 16px;
+
+        }
+        input[type="submit"]{
+            height: 40px;
+            width: 250px;
+            margin: 20px 0 0 0;
+            outline: none;
+            border: none;
+            background-color: var(--coffeeAutumn);
+            color: var(--coffeeLightBrown);
+            font-size: 16px;
+        }
+        input[type="submit"]:hover{
+            opacity: .8;
+        }
+        input[type="checkbox"]{
+            height: 20px;
+            width: 20px;
+            margin: 10px 0 0 0;
         }
 
     </style>
@@ -49,12 +114,38 @@
                     <img src="../image/linkedin.png" alt="" class="linkCardIcon" id="linkedInIcon">
                     <p class="linkCardText" id="linkedinText">Check my profile! <br> Name: Francis Emmanuel Anciro</p>
                 </a>
-                <a href="#" class="linkCard">
+                <a href="mailto:fdanciro@student.apc.edu.ph" class="linkCard">
                     <img src="../image/outlook.png" alt="" class="linkCardIcon" id="outlookIcon">
                     <p class="linkCardText" id="outlookText">Send me an Email! <br>Email: fdanciro@student.apc.edu.ph</p>
                 </a>
         </section>
-    </main>
+        
+        <section class="newsLetterFormContainer">
+            <h2 class="formHeading" style="text-align: center; margin: 0 0 20px 0;">Wanna receive <br>updates from me?</h2>
+            <h3 style="margin:25px 0;">Sign up to my news letter</h3>
+            <form action="#">
+                <label for="firstNameField" class="inputLabel" >First Name</label>
+                <br>
+                <input type="text" class="inputField" id="firstNameField" placeholder="ex. Juan">
+                <br>
 
+                <label for="lastNameField" class="inputLabel">Last Name</label>
+                <br>
+                <input type="text" class="inputField" id="lastNameField" placeholder="ex. Dela Cruz">
+                <br>
+
+                <label for="emailField" class="inputLabel">Email</label>
+                <br>
+                <input type="text" class="inputField" id="emailField" placeholder="ex. juandelacruz@example.com">
+                <br>
+                <input type="checkbox" name="termsAndConditionsCheckbox">
+                <label for="termsAndConditionsCheckbox" style="text-align: start;">Sign up for news and updates</label>
+                <br>    
+
+                <input type="submit" class="submitButton">
+            </form>
+        </section>
+
+    </main>
 </body>
 </html>

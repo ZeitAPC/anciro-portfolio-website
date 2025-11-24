@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="../css/coffee-theme.css">
+    <link rel="shortcut icon" href="../image/coffee.png" type="image/x-icon">
+
     <style>
         main{
             display: flex;
@@ -25,6 +27,17 @@
         th{
             background: var(--coffeeDarkBrown);
             color: var(--coffeeLightBrown);
+        }
+        tr:active{
+            background: var(--coffeeBrown);
+            color: var(--coffeeLightBrown);
+        }
+        .dijkstraLink:visited{
+            background-color: var(--coffeeAutumn);
+        }
+        td:empty, tr:empty{
+            background: chocolate;
+            height: 70px;
         }
     </style>
 </head>
@@ -81,9 +94,14 @@
             </tr>
             <tr>
                 <td>Eco-Path Finder</td>
-                <td>A CLI program made in <mark>python</mark> that implements <a href="#">Dijkstra's Algorithm</a> and adding road types, number of stoplights,
+                <td>A CLI program made in <mark>python</mark> that implements <a href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm" class="dijkstraLink" target="_blank" style="color: var(--coffeeDarkBrown)">Dijkstra's Algorithm</a> and adding road types, number of stoplights,
                 and congestion to the factors considered when calculating each path.</td>
                 <td>2025</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
         </table>
     </main>
