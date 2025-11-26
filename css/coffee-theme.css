@@ -18,7 +18,7 @@ body{
 body a{
         text-decoration: none;
 }
-nav{
+.nav{
     display: flex;
     background: var(--coffeeDarkBrown);
     height: 60px;
@@ -28,15 +28,22 @@ nav{
 .nav-icon{
     height: 100%
 }
-.links{
+.nav-link{
     color: var(--coffeeLightBrown);
     text-decoration: none;
-    margin: 10px 25px;
+    margin: 0 25px;
     height: 100%;
     display: flex;
     align-items: center;
     padding: 0 20px;
 }
-nav a:hover, #active{
+.nav-link:hover{
+    color: var(--coffeeLightBrown);
+    background-color: var(--coffeeBrown);
+}
+.nav-link:focus{
+    color: var(--coffeeLightBrown) !important;
+}
+.active{
     background: var(--coffeeBrown);
 }
