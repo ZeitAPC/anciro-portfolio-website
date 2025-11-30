@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+<style>
+    #navContainer{
+        background-color: red;
+    }
+    #header{
+        background-color: orange;
+    }
+    #myLinks{
+        background-color: yellow;
+    }
+    #emailForm{
+        background-color: green;
+    }
+
+</style>
+<body>
+    <nav id="navContainer">
+        <a href="../index.html" class="navLinks">Homepage</a>
+        <a href="aboutMe.html" class="navLinks">About</a>
+        <a href="portfolio.html" class="navLinks">Portfolio</a>
+        <a href="#" id="active" class="navLinks">Contact</a>
+    </nav>
+    <h1 id="header">Ready to start a project? Send me a message.</h1>
+    <main>
+        <section id="myLinks">
+            <h2 id="myLinksTitle">Ways to connect</h2>
+            <a href="#" class="contactLinks">Check out my LinkedIn</a>
+            <a href="#" class="contactLinks">Email me</a>
+        </section>
+        <section id="emailForm">
+            <form action="">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required>
+
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" required>
+
+                <label for="projectDetails">Project Details:</label>
+                <input type="text" name="projectDetails" id="projectDetails" required>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
