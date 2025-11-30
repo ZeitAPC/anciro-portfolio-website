@@ -8,20 +8,37 @@
     <link rel="shortcut icon" href="../image/coffee.png" type="image/x-icon">
     <link rel="stylesheet" href="css/global.css">
 </head>
+<style>
+    #navContainer{
+        background-color: red;
+    }
+    #heroSectionContainer{
+        background-color: orange;
+    }
+    #whatIDoContainer{
+        background-color: yellow;
+    }
+    #featuredProjectContainer{
+        background-color: green;
+    }
+    #callToActionContainer{
+        background-color: blue;
+    }
+</style>
 <body>
-<nav class="navContainer" style="background-color: red;">
+<nav id="navContainer">
     <a href="#" class="navLinks" id="active">Homepage</a>
     <a href="html/aboutMe.html" class="navLinks">About</a>
-    <a href="" class="navLinks">Portfolio</a>
-    <a href="" class="navLinks">Contact</a>
+    <a href="html/portfolio.html" class="navLinks">Portfolio</a>
+    <a href="html/contact.html" class="navLinks">Contact</a>
 </nav>
 <main>
-    <section class="heroSectionContainer" style="background-color: orange;">
+    <section id="heroSectionContainer">
         <h2 class="heroSectionTitle">Hi, I'm Francis!</h2>
         <p class="heroSectionText">An all around developer for your needs.</p>
     </section>
 
-    <section class="whatIDoContainer" style="background-color: yellow;">
+    <section id="whatIDoContainer">
         <h2 class="whatIDoContainerTitle">What I do</h2>
         <article class="webDevSection">
             <h3 class="webDevHeading">Web Development</h3>
@@ -57,7 +74,7 @@
 
     </section>
 
-    <section class="featuredProjectContainer"   style="background-color: green;">
+    <section id="featuredProjectContainer">
         <h2 class="featuredProjectTitle">
             Featured projects
         </h2>
@@ -93,7 +110,7 @@
         </article>
     </section>
 
-    <section class="callToActionContainer"  style="background-color: blue;">
+    <section id="callToActionContainer">
         <h2 class="callToActionTitle">So if you're ready to start your next project</h2>
         <article>
             <h3 class="callToActionHeading">
