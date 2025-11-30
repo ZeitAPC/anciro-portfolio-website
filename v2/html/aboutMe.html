@@ -3,30 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About</title>
+    <link rel="stylesheet" href="../css/global.css">
 </head>
+<style>
+    #nav{
+        background-color: red;
+    }
+    #whoAmI{
+        background-color: orange;
+    }
+    #myPhilosophy{
+        background-color: yellow;
+    }
+    #myCredentials{
+        background-color: green;
+    }
+    #myTechnicalExpertise{
+        background-color: blue ;
+    }
+</style>
 <body>
-            <article class="strengths">
-            <h3 class="strengthsHeading">More Skills</h3>
-            <ul class="strengthsList">
-                <li>Strong communication with client</li>
-                <li>Efficient and structured workflow</li>
-                <li>Familiar with Git workflows</li>
-                <li>Can quickly adapt to client preferences</li>
-                <li>Clean, consistent UI</li>
-                <li>User-focused UX decisions</li>
-                <li>Fast prototyping</li>
-                <li>Writes for performance and resource efficiency</li>
-                <li>Readable code</li>
+    <nav id="nav" class="navContainer">
+        <a href="../index.html" class="navLinks">Homepage</a>
+        <a href="#" class="navLinks" id="active">About</a>
+        <a href="" class="navLinks">Portfolio</a>
+        <a href="" class="navLinks">Contact</a>
+    </nav>
+
+    <main>
+        <section id="whoAmI">
+            <h1 class="sectionTitle">Who am I</h1>
+            <p class="sectionText">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa nobis aspernatur ex pariatur velit sunt tempore sed fuga sit accusantium 
+                adipisci repellendus nihil quisquam, tempora eum suscipit laudantium inventore atque optio eius doloribus at rerum! Modi cumque laboriosam 
+                cupiditate ipsum deleniti rerum placeat assumenda, aliquam officiis, tempore enim ullam sapiente. <br>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa nobis aspernatur ex pariatur velit sunt tempore sed fuga sit accusantium 
+                adipisci repellendus nihil quisquam, tempora eum suscipit laudantium inventore atque optio eius doloribus at rerum! Modi cumque laboriosam 
+                cupiditate ipsum deleniti rerum placeat assumenda, aliquam officiis, tempore enim ullam sapiente. <br>
+            </p>
+        </section>
+
+        <section id="myPhilosophy">
+            <h1 class="sectionTitle">My programming philosophy</h1>
+            <p class="sectionText">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dignissimos, labore dolores reprehenderit velit nemo assumenda? Similique 
+                veniam sequi amet repellat facilis delectus, rem fugit labore exercitationem. Distinctio numquam reprehenderit nulla, provident doloribus, 
+                repellendus qui est animi, veritatis nostrum hic. Cupiditate eius cum temporibus voluptate praesentium, amet in eveniet dolorum!
+            </p>
+        </section>
+
+        <section id="myCredentials">
+            <h1 class="sectionTitle">My credentials</h1>
+            <ul id="listOfCertification">
+                <li class="certifications">Certification</li>
+                <li class="certifications">Certification</li>
+                <li class="certifications">Certification</li>
+                <li class="certifications">Certification</li>
+                <li class="certifications">Certification</li>
+                <li class="certifications">Certification</li>
             </ul>
-        </article>
-            <section class="personalInfoContainer">
-        <h2 class="personalInfoTitle">
-            Development Philosophy
-        </h2>
-        <p class="personalInfoDescription">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aut in inventore iure maxime mollitia qui tempore voluptatum. Assumenda commodi doloremque, dolorum eum iste maxime nihil quaerat reprehenderit voluptas voluptatum.
-        </p>
-    </section>
+            <button id="clickToViewCV">Click to view my resume</button>
+        </section>
+
+        <section id="myTechnicalExpertise">
+            <h1 class="sectionTitle">My technical expertise</h1>
+            <ul id="programmingLanguages">
+                <h2 class="listTitle">Programming language</h2>
+                <li>Java</li>
+                <li>Python</li>
+                <li>TypeScript</li>
+                <li>JavaScript</li>
+                <li>HTML & CSS</li>
+            </ul>
+            <ul id="frameworks">
+                <h2 class="listTitle">Frameworks</h2>
+                <li>Bootstrap</li>
+            </ul>
+            <ul id="databases">
+                <h2 class="listTitle">Databases</h2>
+                <li>MySQL</li>
+            </ul>
+            <ul id="Tools">
+                <h2 class="listTitle">Tools</h2>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>VS Code</li>
+                <li>Intellij</li>
+                <li>PyCharm</li>
+                <li>Cisco Packet Tracer</li>
+            </ul>
+        </section>
+    </main>
 </body>
 </html>
