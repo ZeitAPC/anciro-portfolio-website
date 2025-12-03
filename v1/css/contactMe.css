@@ -1,0 +1,105 @@
+        main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 75px 0 0 0;
+        }
+        .card-container{
+            display: flex;
+            justify-content: center;
+            gap: 75px;
+        }
+
+        /* Ends with */
+        .card-container img[src$=".png"]{
+            width: 100%;
+        }
+        .newsLetterFormContainer{
+            display: flex;
+            flex-direction: column;
+            background-color: var(--color-text-main);
+            color: var(--color-text-muted);
+            height: 600px;
+            width: 400px;
+            margin: 0 0 0 75px;
+            justify-content: center;
+            align-items: center;
+            border-radius:4%;
+        }
+        /* Has Attr */
+        input[id]{
+            border: 2px var(--color-accent-secondary) solid;
+            background-color: white;
+            height: 40px;
+            width: 250px;
+            padding: 0 0 0 5px;
+        }
+        input[id]::placeholder{
+            color: var(--color-accent-primary);
+            font-size: 16px;
+            opacity: .5;
+        }
+        input:focus{
+            outline: none;
+        }
+        /* Exact value */
+        input[type="text"]{
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        input[type="submit"]{
+            height: 40px;
+            width: 250px;
+            margin: 20px 0 0 0;
+            outline: none;
+            border: none;
+            background-color: var(--color-accent-primary);
+            color: var(--color-text-muted);
+            font-size: 16px;
+        }
+        input[type="submit"]:hover{
+            opacity: .8;
+        }
+        input[type="checkbox"]{
+            height: 20px;
+            width: 20px;
+            margin: 6px 0 0 0;
+        }
+        input[type="checkbox"]:checked{
+            background-color: var(--color-accent-primary);
+            border-color: var(--color-text-muted);
+            box-shadow: none!important;
+        }
+        input[type="checkbox"]:focus{
+            border-color: var(--color-text-muted);
+            box-shadow: none!important;
+        }
+        /* Bootstrap */
+        .card{
+            height: 600px;
+            width: 400px;
+            background-color: var(--color-text-main);
+            color: var(--color-text-muted);
+            border-radius:4%;
+            padding: 0 10px;
+        }
+        .btn-primary{
+            background-color: var(--color-accent-primary);
+            border-color: var(--color-accent-secondary);
+        }
+        .btn-primary:hover{
+            opacity: .8;
+            background-color: var(--color-accent-primary);
+            border-color: var(--color-accent-secondary);
+        }
+        .form-group{
+            margin: 20px 0;
+        }
+        .form-control:focus, .btn-primary:focus{
+            border-color: var(--color-accent-primary) !important;
+            background-color: var(--color-accent-primary);
+            box-shadow: none!important;
+        }
+        .btn-primary[type="submit"]{
+            margin: 10px 0;
+        }

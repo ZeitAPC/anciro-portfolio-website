@@ -1,9 +1,9 @@
 :root{
-    --coffeeDarkBrown:#3B2F2F;
-    --coffeeLightBrown:#ffe9c0;
-    --coffeeBrown:#6F4E37;
-    --dark-theme-secondary-color:#4B3832;
-    --coffeeAutumn:#d2691e;
+    --color-text-main:#3B2F2F;
+    --color-text-muted:#ffe9c0;
+    --color-accent-secondary:#6F4E37;
+    --color-bg-surface:#4B3832;
+    --color-accent-primary:#d2691e;
 }
 *{
     margin: 0;
@@ -11,16 +11,16 @@
     box-sizing: border-box;
 }
 body{
-    background: var(--coffeeLightBrown);
-    color: var(--coffeeDarkBrown);
+    background: var(--color-text-muted);
+    color: var(--color-text-main);
     font-size: 20px;
 }
 body a{
-        text-decoration: none;
+    text-decoration: none;
 }
 .nav{
     display: flex;
-    background: var(--coffeeDarkBrown);
+    background: var(--color-text-main);
     height: 60px;
     align-items: center;
     padding: 0 0 0 20px;
@@ -29,7 +29,7 @@ body a{
     height: 100%
 }
 .nav-link{
-    color: var(--coffeeLightBrown);
+    color: var(--color-text-muted);
     text-decoration: none;
     margin: 0 25px;
     height: 100%;
@@ -38,12 +38,19 @@ body a{
     padding: 0 20px;
 }
 .nav-link:hover{
-    color: var(--coffeeLightBrown);
-    background-color: var(--coffeeBrown);
+    color: var(--color-text-muted);
+    background-color: var(--color-accent-secondary);
 }
 .nav-link:focus{
-    color: var(--coffeeLightBrown) !important;
+    color: var(--color-text-muted) !important;
 }
 .active{
-    background: var(--coffeeBrown);
+    background: var(--color-accent-secondary);
+}
+#themeToggle{
+    border: none;
+    height: 100%;
+    padding: 0 20px;
+    background-color: var(--color-accent-primary);
+    color: #ffe9c0;
 }

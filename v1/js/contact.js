@@ -1,31 +1,35 @@
-function validateForm(){
-    let fNameInput = document.forms["newsLetter"]["fName"].value;
-    let lNameInput = document.forms["newsLetter"]["lName"].value;
-    let emailInput = document.forms["newsLetter"]["email"].value;
+const formID = document.getElementById("newsLetter");
+const newsLetterCheckBox = document.getElementById("newsLetterCheckBox");
+const submitButtonID = document.getElementById("submitFormButton");
 
-    if (!fNameInput.trim()){
-        alert("Enter a first name");
-        return false;
-    }
-    if (!lNameInput.trim()){
-        alert("Enter a last name");
-        return false;
-    }
-    if (!emailInput.trim()){
-        alert("Enter your email");
-        return false;
-    }
-    return true;
-}
 
-document.getElementById("newsLetter").addEventListener("submit", formSubmissionAlert)
-function formSubmissionAlert(e){
+formID.addEventListener("submit", formValidation);
+
+function formValidation(e){
     e.preventDefault();
-    let inputIsValid = validateForm();
-    if (inputIsValid){
-        document.getElementById("submitFormButton").innerHTML = "Sent";
-        alert("Form has been submitted");
-        e.target.submit();
+    let firstNameInput = document.forms["newsLetter"]["fName"].value.trim();
+    let lastNameInput = document.forms["newsLetter"]["lName"].value.trim();
+    let emailInput = document.forms["newsLetter"]["email"].value.trim();
+    
+    let allValidInputs = true;
+    if (!firstNameInput){
+        alert("First name cannot be empty.");
+        allValidInputs = false;
     }
-}   
-
+    if (!lastNameInput){
+        alert("Last name cannot be empty.");
+        allValidInputs = false;
+    }
+    if (!emailInput){
+        alert("Email cannot be empty.");
+        allValidInputs = false;
+    }
+    if (!newsLetterCheckBox.checked){
+        alert("Check box needs to be checked");
+        allValidInputs = false;
+    }
+    if (allValidInputs){
+        alert("Form has been submitted")
+        document.getElementById("submitFormButton").innerHTML = "Form Submitted."
+    }
+}
