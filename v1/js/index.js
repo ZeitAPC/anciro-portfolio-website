@@ -3,11 +3,18 @@ const icedCoffeePics = [
     "image/icedCoffee2.jpg",
     "image/icedCoffee3.jpg"
 ];
-const changeImg = document.getElementById("icedCoffeePic");
-let i = 0;
 
-function changeImage() {
-    i = (i + 1) % icedCoffeePics.length;
-    changeImg.src = icedCoffeePics[i];
-}
-setInterval(changeImage, 3000);
+const changeImg = document.getElementById("icedCoffeePic");
+
+const icedCoffeeImgLoop = async () => {
+    let i = 0;
+
+    while (true) {
+        changeImg.src = icedCoffeePics[i];
+        i = (i + 1) % icedCoffeePics.length;
+
+        await new Promise(res => setTimeout(res, 3000));
+    }
+};
+
+icedCoffeeImgLoop();
