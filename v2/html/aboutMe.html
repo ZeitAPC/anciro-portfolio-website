@@ -5,24 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/aboutMe.css">
 </head>
-<style>
-    #navContainer{
-        background-color: red;
-    }
-    #whoAmIContainer{
-        background-color: orange;
-    }
-    #myPhilosophyContainer{
-        background-color: yellow;
-    }
-    #myCredentialsContainer{
-        background-color: green;
-    }
-    #myTechnicalExpertiseContainer{
-        background-color: blue ;
-    }
-</style>
+
 <body>
     <nav id="navContainer">
         <a href="../index.html" class="navLinks">Homepage</a>
@@ -34,38 +19,65 @@
     <main>
         <section id="whoAmIContainer">
             <h1 class="sectionTitle">Who am I</h1>
+            <figure id="whoAmIPic" ><img src="../images/whoAmIpic.jpeg" alt="" ></figure>
             <p class="sectionText">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa nobis aspernatur ex pariatur velit sunt tempore sed fuga sit accusantium 
-                adipisci repellendus nihil quisquam, tempora eum suscipit laudantium inventore atque optio eius doloribus at rerum! Modi cumque laboriosam 
-                cupiditate ipsum deleniti rerum placeat assumenda, aliquam officiis, tempore enim ullam sapiente. <br>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa nobis aspernatur ex pariatur velit sunt tempore sed fuga sit accusantium 
-                adipisci repellendus nihil quisquam, tempora eum suscipit laudantium inventore atque optio eius doloribus at rerum! Modi cumque laboriosam 
-                cupiditate ipsum deleniti rerum placeat assumenda, aliquam officiis, tempore enim ullam sapiente. <br>
+                I'm Francis, a second-year Computer Science student specializing in Cybersecurity and Digital Forensics, and your future partner in building meaningful, high-quality projects.
             </p>
         </section>
 
         <section id="myPhilosophyContainer">
             <h1 class="sectionTitle">My programming philosophy</h1>
-            <p class="sectionText">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dignissimos, labore dolores reprehenderit velit nemo assumenda? Similique 
-                veniam sequi amet repellat facilis delectus, rem fugit labore exercitationem. Distinctio numquam reprehenderit nulla, provident doloribus, 
-                repellendus qui est animi, veritatis nostrum hic. Cupiditate eius cum temporibus voluptate praesentium, amet in eveniet dolorum!
-            </p>
+            <ul id="sectionBody">
+                <li class="philosophy">
+                    <h2>Clarity</h2>
+                    I write code that's readable, maintainable, and efficient.
+                </li>
+                <li class="philosophy">
+                    <h2>User-First Approach</h2>
+                    In everything I do, I always consider the user's experience and needs.
+                </li>
+                <li class="philosophy">
+                    <h2>Communication</h2>
+                    I communicate closely with clients to ensure the product matches their objectives.
+                </li>
+            </ul>
         </section>
 
         <section id="myCredentialsContainer">
             <h1 class="sectionTitle">My credentials</h1>
             <ul id="listOfCertification">
-                <li class="certifications">Certification</li>
-                <li class="certifications">Certification</li>
-                <li class="certifications">Certification</li>
-                <li class="certifications">Certification</li>
-                <li class="certifications">Certification</li>
-                <li class="certifications">Certification</li>
+                <li class="certifications">
+                    <button class="showCertification">Foundations of Algorithmic Thinking</button>
+                </li>
+                <li class="certifications">
+                    <button class="showCertification">Fundamentals of Dynamic Programming</button>
+                </li>
+                <li class="certifications">
+                    <button class="showCertification">Master Microsoft Teams</button>
+                </li>
+                <li class="certifications">
+                    <button class="showCertification">Networking Basics</button>
+                </li>
+                <li class="certifications">
+                    <button class="showCertification">Data Structures: Linked List</button>
+                </li>
+                <li class="certifications">
+                    <button class="showCertification">Data Structures: Stacks, Queues, and Dequeue</button>
+                </li>
+                <li class="certifications">
+                    <button class="showCertification">Data Structures: Trees</button>
+                </li>
+                <li class="certifications">
+                    <button class="showCertification">Python Recursions</button>
+                </li>
             </ul>
             <button id="clickToViewCV">Click to view my resume</button>
         </section>
-
+        <section id="popUpCertification">
+            <span class="close">&times;</span>
+            <figure class="popUpContent"></figure>
+            <p id="caption"></p>
+        </section>
         <section id="myTechnicalExpertiseContainer">
             <h1 class="sectionTitle">My technical expertise</h1>
             <ul id="programmingLanguages">
@@ -92,6 +104,7 @@
                 <li>Intellij</li>
                 <li>PyCharm</li>
                 <li>Cisco Packet Tracer</li>
+                <li>Microsoft Office programs</li>
             </ul>
         </section>
     </main>
