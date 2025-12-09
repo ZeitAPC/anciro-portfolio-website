@@ -1,5 +1,5 @@
 #popUpCertification {
-    display: none;              /* hide by default */
+    display: none;              
     position: fixed;
     top: 0;
     left: 0;
@@ -9,13 +9,28 @@
     justify-content: center;
     align-items: center;
     z-index: 9999;
+    flex-direction: column;
+}
+
+.popUpContent{
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 
 .popUpContent img {
-    max-width: 90%;
-    border-radius: 10px;
+  margin: auto;
+  max-width: 50%;
 }
-
+#caption{
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  font-size: 20px;
+}
 #popUpCertification .close {
     position: absolute;
     top: 20px;
